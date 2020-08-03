@@ -22,6 +22,9 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
+                </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
@@ -32,6 +35,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,12 +52,17 @@
 
     <div class="container">
         <div class="row row-content">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 order-sm-last col-md-3 align-self-center">
                 <h2>Discover & Review</h2>
             </div>
-            <div class="col" style="padding: 0 50px">
-                <h3>Our Campsites</h3>
-                <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -61,24 +70,73 @@
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
-            <div class="col" style="padding: 0 50px">
-                <h3>React Lake Campground</h3>
-        		<p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-   			</div>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail" />
+                </div>
+            </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 order-sm-last col-md-3">
                 <h2>Our Community Partners</h2>
             </div>
-            <div class="col" style="padding: 0 50px">
-                <h3>Bootstrap Outfitters</h3>
-        		<p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <div class="media-body align-self-center">
+                        <h3>Bootstrap Outfitters</h3>
+        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-6" for="numberCamp">Number of Campers</label>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-control" name="number" id="numberCamp">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-6" for="date">Date</label>
+                                <div class="col">
+                                    <input type="date" class="date form-control" name="date" id="date" placeholder="mm/dd/yyyy"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 
-    <footer>
+    
+
+    <footer class="site-footer>
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2 text-center">
